@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.348" height="23.983" viewBox="0 0 18.348 23.983">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="18.348" height="23.983" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1" clip-path="url(#clip-path)">
+    <g id="Layer_1-2" data-name="Layer_1">
+      <path id="Path_776" data-name="Path 776" d="M23.848,24.9V.917H6.466v2.5H5.5v1h.966v2H5.5v1h.966v2H5.5v1h.966v2H5.5v1h.966v2H5.5v1h.966v2H5.5v1h.966v2H5.5v1h.966v2.5ZM7.431,19.4H8.4v-1H7.431v-2H8.4v-1H7.431v-2H8.4v-1H7.431v-2H8.4v-1H7.431v-2H8.4v-1H7.431v-2H8.4v-1H7.431v-1.5H22.882V23.9H7.431V22.4H8.4v-1H7.431Z" transform="translate(-5.5 -0.917)" fill="#fff"/>
+      <path id="Path_777" data-name="Path 777" d="M25.24,7.333H15.583v6.995H25.24Zm-.966,6H16.549v-5h7.725Z" transform="translate(-10.272 -3.836)" fill="#fff"/>
+      <rect id="Rectangle_498" data-name="Rectangle 498" width="6.76" height="0.999" transform="translate(6.76 12.491)" fill="#fff"/>
+      <rect id="Rectangle_499" data-name="Rectangle 499" width="6.76" height="0.999" transform="translate(6.76 14.989)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
