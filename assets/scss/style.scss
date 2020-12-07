@@ -1,16 +1,6 @@
 @import "mixin";
 
 /*---------------------------------------------------------------------------*
- * SF UI Display
- *---------------------------------------------------------------------------*/
-
-@font-face {
-  font-family: "SF Display";
-  font-weight: 900;
-  src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
-}
-
-/*---------------------------------------------------------------------------*
  * SF UI Text
  *---------------------------------------------------------------------------*/
 
@@ -389,6 +379,48 @@ section {
 
 .img-wrapper-md:hover img {
   transform: scale(1.1);
+}
+
+ul.square li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #adadad;
+}
+
+ul.square {
+  margin-left: 0;
+}
+
+ul.square li {
+  padding-left: 20px;
+}
+
+.fill-green {
+  background: $fill-green;
+}
+
+.fill-brown {
+  background: $fill-brown;
+}
+
+.fill-violet {
+  background: $fill-violet;
+}
+
+.fill-yellow-orange {
+  background: $fill-yellow-orange;
+}
+
+.fill-sky-blue {
+  background: $fill-sky-blue;
+}
+
+.fill-light-red {
+  background: $fill-light-red;
 }
 
 /* card start */
@@ -807,6 +839,7 @@ section.main-middle-contain-wrapper {
 .freelancer-job-title {
   font-family: 'Oswald', sans-serif;
   color: $white-color;
+  color: $text-dark;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -825,6 +858,7 @@ section.main-middle-contain-wrapper {
   width: 30%;
   height: 2px;
   background: $white-color;
+  background: $text-dark;
 }
 
 .freelancer-job-item .blurb {
@@ -970,12 +1004,170 @@ form.preregisternewsletter-form {
 
 /* preregisternewsletter section close */
 
+/* benefits section start */
+.benefits-section {
+  padding: 80px 0;
+  background: #FAFAFA;
+}
+
+.benefits-section .section-title-wrapper {
+  margin-bottom: 34px;
+}
+
+.benefits-section .section-title {
+  letter-spacing: 1.4px;
+}
+
+.benefits-brief-desc {
+  margin-bottom: 44px;
+}
+
+.benefits-brief-desc .benefits-sub-title {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 1.4px;
+  margin-bottom: 24px;
+}
+
+.benefits-brief-desc .benefits-sub-title strong {
+  font-weight: 700;
+}
+
+.benefits-item-wrapper .benefits-brief-desc .blurb {
+  font-weight: 300;
+}
+
+.benefits-item-wrapper .benefits-brief-desc .blurb li {
+  margin-bottom: 10px;
+}
+
+.benefits-item-wrapper .benefits-brief-desc .blurb,
+.benefits-item-wrapper .benefits-brief-desc .blurb a {
+  font-size: 14px;
+}
+
+.benefits-section .benefits-brief-desc .blurb {
+  font-weight: 300;
+  margin-right: 24px;
+}
+
+.benefits-brief-desc .benefit-img {
+  margin-bottom: 24px;
+}
+
+.benefits-brief-desc .benefit-img img {
+  width: 100%;
+  max-width: 320px;
+}
+
+.benefits-section .benefits-brief-desc p {
+  margin-bottom: 34px;
+}
+
+.benefits-item-wrapper {
+  margin-bottom: 44px;
+}
+
+.benefits-item-wrapper:hover .benefits-icon {
+  transform: translateY(-6px);
+}
+
+.benefits-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  // background: #242424;
+  margin-bottom: 24px;
+  box-shadow: 0 18px 40px -12px rgba(24, 24, 24, 0.6);
+  @include transition;
+}
+
+.benefits-icon.fill-green {
+  box-shadow: 0 18px 40px -12px rgba(127, 209, 64, 0.6);
+}
+
+.benefits-icon.fill-brown {
+  box-shadow: 0 18px 40px -12px rgba(217, 144, 119, 0.6);
+}
+
+.benefits-icon.fill-violet {
+  box-shadow: 0 18px 40px -12px rgba(98, 115, 217, 0.6);
+}
+
+.benefits-icon.fill-yellow-orange {
+  box-shadow: 0 18px 40px -12px rgba(242, 182, 0, 0.6);
+}
+
+.benefits-icon.fill-sky-blue {
+  box-shadow: 0 18px 40px -12px rgba(47, 185, 203, 0.6);
+}
+
+.benefits-icon.fill-light-red {
+  box-shadow: 0 18px 40px -12px rgba(234, 113, 75, 0.6);
+}
+
+.benefits-title {
+  font-family: "Oswald",
+    sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  /* text-transform: uppercase; */
+  color: #242424;
+}
+
+.benefits-icon-title {
+  margin-bottom: 14px;
+}
+
+.benefits-item-wrapper .blurb {
+  font-weight: 300;
+}
+
+.benefits-item-wrapper .blurb li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.benefits-item-wrapper .blurb ul.square li::before {
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #BFDEF4;
+}
+
+.benefits-item-wrapper .blurb,
+.benefits-item-wrapper .blurb a {
+  font-size: 14px;
+}
+
+/* benefits section close */
+
 /* can i register section start */
 .can-i-register-section {
   padding: 10% 0;
   background: url("../images/question-bg-img.jpg") no-repeat center;
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(210deg, rgb(160, 222, 219), rgb(3, 165, 209));
+  background-image: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%, rgba(26, 218, 182, 0.15) 100%),
+    linear-gradient(336deg, rgb(50, 52, 221), rgb(60, 239, 241));
+  background-image: linear-gradient(45deg, rgb(51, 138, 249), rgb(47, 248, 255));
+}
+
+.can-i-register-img img {
+  max-width: 320px;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.can-i-register-img {
+  text-align: center;
 }
 
 .can-i-register-section .section-title {
@@ -1020,6 +1212,133 @@ form.preregisternewsletter-form {
 
 /* highlight-yellow section close */
 
+/* how-it-works section start */
+.how-it-works {
+  padding: 80px 0;
+  position: relative;
+}
+
+.how-it-works .container {
+  position: relative;
+}
+
+.how-it-works .container::before {
+  @include position-absolute-top-left(30%, 50%);
+  content: '';
+  width: 90%;
+  height: 390px;
+  transform: translate(-50%, -20%);
+  background: url('../images/dashed-arrow.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.how-it-works .section-title-wrapper {
+  margin-bottom: 44px;
+}
+
+.how-it-works .section-title {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.how-it-works .item-wrapper {
+  position: relative;
+  background: $white-color;
+  max-width: 280px;
+  width: 100%;
+  height: 212px;
+  margin: 0 auto 34px;
+  @include display-flex;
+  @include flex-direction-column;
+  @include justify-content-center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  @include transition();
+  @include box-shadow(0 8px 24px -4px rgba(153, 153, 153, 0.2));
+  overflow: hidden;
+}
+
+.item-wrapper::before {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  // background: #adadad;
+  transform: skew(-45deg) translateX(-80%);
+}
+
+.item-wrapper.fill-light-red::before {
+  background-color: $fill-light-red;
+}
+
+.item-wrapper.fill-green::before {
+  background: $fill-green;
+}
+
+.item-wrapper.fill-yellow-orange::before {
+  background: $fill-yellow-orange;
+}
+
+.item-wrapper.fill-sky-blue::before {
+  background: $fill-sky-blue;
+}
+
+.item-wrapper::after {
+  content: attr(data-step);
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  font-family: "Oswald",
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  color: $white-color;
+}
+
+.how-it-works .item-wrapper:hover {
+  @include transform(scale(1.03));
+  @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
+}
+
+// .how-it-works .row .col-md-3:nth-child(2) .item-wrapper {
+//   margin-top: 20px;
+// }
+
+// .how-it-works .row .col-md-3:nth-child(3) .item-wrapper {
+//   margin-top: 40px;
+// }
+
+// .how-it-works .row .col-md-3:nth-child(4) .item-wrapper {
+//   margin-top: 60px;
+// }
+
+.how-it-works .item-wrapper .item-icon {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.how-it-works .item-wrapper .item-icon img {
+  width: 34px;
+  margin: 0 auto;
+}
+
+.how-it-works .item-wrapper .tile-front {
+  font-family: "Oswald",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  /* letter-spacing: 1.4px; */
+  /* text-transform: uppercase; */
+  color: #242424;
+  line-height: 20px;
+}
+
+/* how-it-works section close */
 
 /* various-category section start */
 .various-category-section {
@@ -1132,9 +1451,56 @@ footer {
 
 @media only screen and (max-width: 480px) and (min-width: 375px) {}
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .freelancer-job-item {
+    margin-bottom: 34px;
+  }
+}
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  .intro-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    margin-top: 34px;
+  }
+
+  .freelancer-job-wrapper {
+    margin-top: 64px;
+  }
+
+  .intro-section {
+    padding-top: 10px;
+  }
+
+  .freelancer-job-title {
+    font-size: 22px;
+  }
+
+  .preregisternewsletter-sub-header.text-green {
+    font-size: 24px;
+  }
+
+  .benefits-item-wrapper {
+    padding: 0 14px;
+  }
+
+  .can-i-register-section .section-title {
+    line-height: 34px;
+  }
+
+  .highlight-yellow .section-title {
+    font-size: 22px;
+  }
+
+  .highlight-yellow .blurb {
+    font-size: 14px;
+  }
+
+  .can-i-register-section .blurb {
+    font-size: 14px;
+  }
+}
 
 @media (min-width: 480px) {}
 
