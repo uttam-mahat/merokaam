@@ -56,6 +56,13 @@
 }
 
 /* 'î¡‹' */
+
+.uil-arrow-right:before {
+  content: '\e846';
+}
+
+/* 'î¡†' */
+
 .uil-angle-left:before {
   content: '\e82a';
 }

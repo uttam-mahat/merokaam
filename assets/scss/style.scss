@@ -1016,6 +1016,10 @@ form.preregisternewsletter-form {
 
 .benefits-section .section-title {
   letter-spacing: 1.4px;
+  font-size: 44px;
+  line-height: 60px;
+  color: #31adda;
+  color: #62beff;
 }
 
 .benefits-brief-desc {
@@ -1053,6 +1057,7 @@ form.preregisternewsletter-form {
 
 .benefits-brief-desc .benefit-img {
   margin-bottom: 24px;
+  display: none;
 }
 
 .benefits-brief-desc .benefit-img img {
@@ -1081,14 +1086,15 @@ form.preregisternewsletter-form {
   align-items: center;
   justify-content: center;
   padding: 4px;
-  // background: #242424;
+  // background: $text-dark;
   margin-bottom: 24px;
   box-shadow: 0 18px 40px -12px rgba(24, 24, 24, 0.6);
   @include transition;
 }
 
 .benefits-icon.fill-green {
-  box-shadow: 0 18px 40px -12px rgba(127, 209, 64, 0.6);
+  background: #B8D26B;
+  box-shadow: 0 18px 40px -12px rgba(184, 210, 107, 0.6);
 }
 
 .benefits-icon.fill-brown {
@@ -1096,11 +1102,13 @@ form.preregisternewsletter-form {
 }
 
 .benefits-icon.fill-violet {
-  box-shadow: 0 18px 40px -12px rgba(98, 115, 217, 0.6);
+  background: #5ea1da;
+  box-shadow: 0 18px 40px -12px rgba(94, 161, 218, 0.6);
 }
 
 .benefits-icon.fill-yellow-orange {
-  box-shadow: 0 18px 40px -12px rgba(242, 182, 0, 0.6);
+  background: #EAC388;
+  box-shadow: 0 18px 40px -12px rgba(234, 195, 136, 0.6);
 }
 
 .benefits-icon.fill-sky-blue {
@@ -1118,7 +1126,7 @@ form.preregisternewsletter-form {
   font-weight: 600;
   letter-spacing: 1.4px;
   /* text-transform: uppercase; */
-  color: #242424;
+  color: $text-dark;
 }
 
 .benefits-icon-title {
@@ -1260,7 +1268,7 @@ form.preregisternewsletter-form {
   overflow: hidden;
 }
 
-.item-wrapper::before {
+.how-it-works .item-wrapper::before {
   width: 120px;
   height: 120px;
   position: absolute;
@@ -1271,23 +1279,31 @@ form.preregisternewsletter-form {
   transform: skew(-45deg) translateX(-80%);
 }
 
-.item-wrapper.fill-light-red::before {
+.how-it-works .item-wrapper.fill-light-red::before {
   background-color: $fill-light-red;
 }
 
-.item-wrapper.fill-green::before {
-  background: $fill-green;
+.how-it-works .item-wrapper.fill-green::before {
+  // background: $fill-green;
 }
 
-.item-wrapper.fill-yellow-orange::before {
-  background: $fill-yellow-orange;
+.how-it-works .item-wrapper.fill-yellow-orange::before {
+  // background: $fill-yellow-orange;
 }
 
-.item-wrapper.fill-sky-blue::before {
+.how-it-works .item-wrapper.fill-sky-blue::before {
   background: $fill-sky-blue;
 }
 
-.item-wrapper::after {
+.how-it-works .item-wrapper.fill-green::before {
+  background: #B8D26B;
+}
+
+.how-it-works .item-wrapper.fill-yellow-orange::before {
+  background: #EAC388;
+}
+
+.how-it-works .item-wrapper::after {
   content: attr(data-step);
   position: absolute;
   top: 8px;
@@ -1334,11 +1350,231 @@ form.preregisternewsletter-form {
   font-weight: 300;
   /* letter-spacing: 1.4px; */
   /* text-transform: uppercase; */
-  color: #242424;
+  color: $text-dark;
   line-height: 20px;
 }
 
 /* how-it-works section close */
+
+/* how-i-get-paid section start */
+.how-i-get-paid {
+  padding: 80px 0;
+  position: relative;
+  background: #f8f8f8;
+  background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165, 0.06) 0%, rgba(165, 165, 165, 0.06) 25%, rgba(193, 193, 193, 0.06) 25%, rgba(193, 193, 193, 0.06) 50%, rgba(221, 221, 221, 0.06) 50%, rgba(221, 221, 221, 0.06) 75%, rgba(249, 249, 249, 0.06) 75%, rgba(249, 249, 249, 0.06) 100%),
+    radial-gradient(circle at 49% 76%, rgba(129, 129, 129, 0.06) 0%, rgba(129, 129, 129, 0.06) 25%, rgba(164, 164, 164, 0.06) 25%, rgba(164, 164, 164, 0.06) 50%, rgba(200, 200, 200, 0.06) 50%, rgba(200, 200, 200, 0.06) 75%, rgba(235, 235, 235, 0.06) 75%, rgba(235, 235, 235, 0.06) 100%),
+    radial-gradient(circle at 22% 64%, rgba(173, 173, 173, 0.06) 0%, rgba(173, 173, 173, 0.06) 25%, rgba(119, 119, 119, 0.06) 25%, rgba(119, 119, 119, 0.06) 50%, rgba(64, 64, 64, 0.06) 50%, rgba(64, 64, 64, 0.06) 75%, rgba(10, 10, 10, 0.06) 75%, rgba(10, 10, 10, 0.06) 100%),
+    linear-gradient(307deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165, 0.06) 0%, rgba(165, 165, 165, 0.06) 25%, rgba(193, 193, 193, 0.06) 25%, rgba(193, 193, 193, 0.06) 50%, rgba(221, 221, 221, 0.06) 50%, rgba(221, 221, 221, 0.06) 75%, rgba(249, 249, 249, 0.06) 75%, rgba(249, 249, 249, 0.06) 100%),
+    radial-gradient(circle at 49% 76%, rgba(129, 129, 129, 0.06) 0%, rgba(129, 129, 129, 0.06) 25%, rgba(164, 164, 164, 0.06) 25%, rgba(164, 164, 164, 0.06) 50%, rgb(247 246 246 / 0.06) 50%, rgba(200, 200, 200, 0.06) 75%, rgba(235, 235, 235, 0.06) 75%, rgba(235, 235, 235, 0.06) 100%),
+    radial-gradient(circle at 22% 64%, rgba(173, 173, 173, 0.06) 0%, rgba(173, 173, 173, 0.06) 25%, rgba(119, 119, 119, 0.06) 25%, rgba(119, 119, 119, 0.06) 50%, rgba(64, 64, 64, 0.06) 50%, rgba(64, 64, 64, 0.06) 75%, rgba(10, 10, 10, 0.06) 75%, rgba(10, 10, 10, 0.06) 100%),
+    linear-gradient(307deg, white, white);
+}
+
+.how-i-get-paid .container {
+  position: relative;
+}
+
+.how-i-get-paid .section-title-wrapper {
+  margin-bottom: 44px;
+}
+
+.how-i-get-paid .section-title {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.how-i-get-paid .how-i-get-paid-item-wrapper-row {
+  justify-content: center;
+}
+
+.how-i-get-paid .item-wrapper {
+  text-align: center;
+}
+
+.how-i-get-paid .item-wrapper::after {
+  content: '\e846';
+  font-family: "unicons";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  font-size: 24px;
+  color: #EA714B;
+  color: $text-dark;
+}
+
+.how-i-get-paid .item-wrapper .item-icon-wrapper {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  background: #f5f5f5;
+  color: $white-color;
+  @include transition();
+  @include box-shadow(0 8px 24px -4px rgba(153, 153, 153, 0.2));
+  overflow: hidden;
+}
+
+.how-i-get-paid .item-wrapper:hover .item-icon-wrapper {
+  @include transform(translateY(-6px));
+  @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
+}
+
+.how-i-get-paid .item-wrapper[data-step="1"] .item-icon-wrapper {
+  color: $fill-sky-blue;
+}
+
+.how-i-get-paid .item-wrapper[data-step="2"] .item-icon-wrapper {
+  color: $fill-yellow-orange;
+}
+
+.how-i-get-paid .item-wrapper[data-step="3"] .item-icon-wrapper {
+  color: $fill-green;
+}
+
+.how-i-get-paid .how-i-get-paid-item-wrapper-row .how-i-get-paid-item-wrapper-col:last-child .item-wrapper::after {
+  display: none;
+}
+
+.how-i-get-paid .item-wrapper .item-icon {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.how-i-get-paid .item-wrapper .item-icon img {
+  width: 34px;
+  margin: 0 auto;
+}
+
+.how-i-get-paid .item-wrapper .tile-front {
+  font-family: "Oswald",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $text-dark;
+  line-height: 20px;
+}
+
+/* how-i-get-paid section close */
+
+/* escrow-payment section start */
+.escrow-payment {
+  padding: 80px 0;
+  position: relative;
+}
+
+.escrow-payment .container {
+  position: relative;
+}
+
+.escrow-payment .section-title-wrapper {
+  margin-bottom: 44px;
+}
+
+.escrow-payment .section-title {
+  text-align: center;
+  letter-spacing: 2px;
+  color: $fill-light-red;
+}
+
+.escrow-payment .escrow-payment-item-wrapper-row {
+  justify-content: center;
+}
+
+.escrow-payment .item-wrapper {
+  text-align: center;
+}
+
+.escrow-payment .item-wrapper::after {
+  content: '\e82c';
+  font-family: "unicons";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  font-size: 24px;
+  color: #EA714B;
+  color: $text-dark;
+}
+
+.escrow-payment .item-wrapper .item-icon-wrapper {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 4px;
+  color: $text-dark;
+  @include transition();
+  @include box-shadow(0 8px 24px -4px rgba(153, 153, 153, 0.2));
+  overflow: hidden;
+}
+
+.escrow-payment .item-wrapper:hover .item-icon-wrapper {
+  @include transform(scale(1.01));
+  @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
+}
+
+
+.escrow-payment .item-wrapper[data-step="1"] .item-icon-wrapper {
+  border-color: $fill-light-red;
+  background: $fill-light-red;
+}
+
+.escrow-payment .item-wrapper[data-step="2"] .item-icon-wrapper {
+  border-color: $fill-yellow-orange;
+  background: $fill-yellow-orange;
+}
+
+.escrow-payment .item-wrapper[data-step="3"] .item-icon-wrapper {
+  border-color: $fill-sky-blue;
+  background: $fill-sky-blue;
+}
+
+.escrow-payment .item-wrapper[data-step="4"] .item-icon-wrapper {
+  border-color: $fill-green;
+  background: $fill-green;
+}
+
+.escrow-payment .escrow-payment-item-wrapper-row .escrow-payment-item-wrapper-col:last-child .item-wrapper::after {
+  display: none;
+}
+
+.escrow-payment .item-wrapper .item-icon {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.escrow-payment .item-wrapper .item-icon img {
+  width: 34px;
+  margin: 0 auto;
+}
+
+.escrow-payment .item-wrapper .tile-front {
+  font-family: "Oswald",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $text-dark;
+  line-height: 20px;
+}
+
+/* escrow-payment section close */
 
 /* various-category section start */
 .various-category-section {
@@ -1510,6 +1746,13 @@ footer {
 
   .freelancer-job-wrapper {
     flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768.98px) {
+
+  .benefits-brief-desc .benefit-img {
+    display: none;
   }
 
 }
