@@ -1,0 +1,37 @@
+<svg id="_001-money-transfer" data-name="001-money-transfer" xmlns="http://www.w3.org/2000/svg" width="23.797" height="23.797" viewBox="0 0 23.797 23.797">
+  <g id="Group_2295" data-name="Group 2295" transform="translate(8.726 11.502)">
+    <g id="Group_2294" data-name="Group 2294">
+      <path id="Path_1141" data-name="Path 1141" d="M189.088,232H188.3v.793h.793a1.191,1.191,0,0,1,1.19,1.19v5.553H176.793v-5.553a1.191,1.191,0,0,1,1.19-1.19h.793V232h-.793A1.985,1.985,0,0,0,176,233.983v6.346a1.985,1.985,0,0,0,1.983,1.983h3.777l-.476,1.19h-1.318v.793h7.139V243.5h-1.318l-.476-1.19h3.777a1.985,1.985,0,0,0,1.983-1.983v-6.346A1.985,1.985,0,0,0,189.088,232Zm-6.95,11.5.476-1.19h1.843l.476,1.19Zm6.95-1.983H177.983a1.191,1.191,0,0,1-1.19-1.19h13.485A1.191,1.191,0,0,1,189.088,241.519Z" transform="translate(-176 -232)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_2297" data-name="Group 2297" transform="translate(0)">
+    <g id="Group_2296" data-name="Group 2296">
+      <path id="Path_1142" data-name="Path 1142" d="M17.567,5.272l-.909.909V4.759a1.985,1.985,0,0,0-1.983-1.983H7.932V1.983A1.985,1.985,0,0,0,5.949,0H.4A.4.4,0,0,0,0,.4V11.9a.4.4,0,0,0,.4.4h3.57V11.5H2.648l-.476-1.19H5.949A1.985,1.985,0,0,0,7.932,8.329V3.57h6.742a1.191,1.191,0,0,1,1.19,1.19V6.182l-.909-.909-.561.561,1.586,1.586a.4.4,0,0,0,.561,0l1.586-1.586ZM.793,11.5v-1.19h.525l.476,1.19ZM5.949,9.519H.793V8.329H7.139A1.191,1.191,0,0,1,5.949,9.519Zm1.19-6.742H5.553V3.57H7.139V7.536H.793V.793H5.949a1.191,1.191,0,0,1,1.19,1.19Z" transform="translate(0)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_2299" data-name="Group 2299" transform="translate(2.38 1.983)">
+    <g id="Group_2298" data-name="Group 2298">
+      <path id="Path_1143" data-name="Path 1143" d="M48.793,40.793V40H48v2.38h.793v-.793H50.38v-.793Z" transform="translate(-48 -40)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_2301" data-name="Group 2301" transform="translate(11.898 7.536)">
+    <g id="Group_2300" data-name="Group 2300">
+      <path id="Path_1144" data-name="Path 1144" d="M247.531,158.346a3.966,3.966,0,1,0-6.336,0H240v.793h8.726v-.793Zm-1.071,0h-1.7v-.073a1.188,1.188,0,0,0,.793-1.117v-.4a1.191,1.191,0,0,0-1.19-1.19.4.4,0,0,1-.4-.4v-.4a.4.4,0,1,1,.793,0h.793a1.188,1.188,0,0,0-.793-1.117v-.47h-.793v.47a1.188,1.188,0,0,0-.793,1.117v.4a1.191,1.191,0,0,0,1.19,1.19.4.4,0,0,1,.4.4v.4a.4.4,0,0,1-.793,0h-.793a1.188,1.188,0,0,0,.793,1.117v.073h-1.7a3.173,3.173,0,1,1,4.193,0Z" transform="translate(-240 -152)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_2303" data-name="Group 2303" transform="translate(5.585 5.953)">
+    <g id="Group_2302" data-name="Group 2302" transform="translate(0 0)">
+      <rect id="Rectangle_515" data-name="Rectangle 515" width="0.765" height="0.765" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_2305" data-name="Group 2305" transform="translate(3.928 5.953)">
+    <g id="Group_2304" data-name="Group 2304" transform="translate(0 0)">
+      <rect id="Rectangle_516" data-name="Rectangle 516" width="0.892" height="0.765" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_2307" data-name="Group 2307" transform="translate(2.398 5.953)">
+    <g id="Group_2306" data-name="Group 2306" transform="translate(0 0)">
+      <rect id="Rectangle_517" data-name="Rectangle 517" width="0.765" height="0.765" fill="#fff"/>
+    </g>
+  </g>
+</svg>
