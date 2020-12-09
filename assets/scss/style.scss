@@ -958,7 +958,7 @@ form.preregisternewsletter-form {
 }
 
 .form-group.form-input {
-  margin-right: 24px;
+  margin-right: 0;
   max-width: 440px;
   width: 100%;
 }
@@ -1016,7 +1016,7 @@ form.preregisternewsletter-form {
 
 .benefits-section .section-title {
   letter-spacing: 1.4px;
-  font-size: 44px;
+  font-size: calc(32px + (44 - 32) * ((100vw - 300px) / (1600 - 300)));
   line-height: 60px;
   color: #31adda;
   color: #62beff;
@@ -1390,14 +1390,17 @@ form.preregisternewsletter-form {
 
 .how-i-get-paid .item-wrapper {
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .how-i-get-paid .item-wrapper::after {
-  content: '\e846';
+  content: '\e83f';
   font-family: "unicons";
   position: absolute;
-  top: 24px;
-  right: 0;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 24px;
   color: #EA714B;
   color: $text-dark;
@@ -1493,14 +1496,17 @@ form.preregisternewsletter-form {
 
 .escrow-payment .item-wrapper {
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .escrow-payment .item-wrapper::after {
-  content: '\e82c';
+  content: '\e829';
   font-family: "unicons";
   position: absolute;
-  top: 24px;
-  right: 0;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 24px;
   color: #EA714B;
   color: $text-dark;
@@ -1518,6 +1524,7 @@ form.preregisternewsletter-form {
   text-align: center;
   border: 2px solid;
   border-radius: 50%;
+  border-radius: 4px;
   padding: 4px;
   color: $text-dark;
   @include transition();
@@ -1529,7 +1536,6 @@ form.preregisternewsletter-form {
   @include transform(scale(1.01));
   @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
 }
-
 
 .escrow-payment .item-wrapper[data-step="1"] .item-icon-wrapper {
   border-color: $fill-light-red;
@@ -1736,6 +1742,11 @@ footer {
   .can-i-register-section .blurb {
     font-size: 14px;
   }
+
+  .how-i-get-paid .section-title-wrapper p,
+  .escrow-payment .section-title-wrapper p {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 480px) {}
@@ -1746,6 +1757,32 @@ footer {
 
   .freelancer-job-wrapper {
     flex-wrap: nowrap;
+  }
+
+  .how-i-get-paid .item-wrapper {
+    margin-bottom: 0;
+  }
+
+  .how-i-get-paid .item-wrapper::after {
+    content: '\e846';
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    top: 44px;
+    right: -12px;
+  }
+
+  .escrow-payment .item-wrapper {
+    margin-bottom: 0;
+  }
+
+  .escrow-payment .item-wrapper::after {
+    content: '\e82c';
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    top: 44px;
+    right: -12px;
   }
 }
 
@@ -1761,6 +1798,10 @@ footer {
 
   section.main-middle-contain-wrapper {
     // padding-top: 141px;
+  }
+
+  .form-group.form-input {
+    margin-right: 24px;
   }
 
 

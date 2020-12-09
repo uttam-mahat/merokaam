@@ -900,7 +900,7 @@ form.preregisternewsletter-form {
 }
 
 .form-group.form-input {
-  margin-right: 24px;
+  margin-right: 0;
   max-width: 440px;
   width: 100%;
 }
@@ -955,7 +955,7 @@ form.preregisternewsletter-form {
 
 .benefits-section .section-title {
   letter-spacing: 1.4px;
-  font-size: 44px;
+  font-size: calc(32px + (44 - 32) * ((100vw - 300px) / (1600 - 300)));
   line-height: 60px;
   color: #31adda;
   color: #62beff;
@@ -1295,14 +1295,17 @@ form.preregisternewsletter-form {
 
 .how-i-get-paid .item-wrapper {
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .how-i-get-paid .item-wrapper::after {
-  content: "";
+  content: "";
   font-family: "unicons";
   position: absolute;
-  top: 24px;
-  right: 0;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 24px;
   color: #EA714B;
   color: #242424;
@@ -1396,14 +1399,17 @@ form.preregisternewsletter-form {
 
 .escrow-payment .item-wrapper {
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .escrow-payment .item-wrapper::after {
-  content: "";
+  content: "";
   font-family: "unicons";
   position: absolute;
-  top: 24px;
-  right: 0;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 24px;
   color: #EA714B;
   color: #242424;
@@ -1421,6 +1427,7 @@ form.preregisternewsletter-form {
   text-align: center;
   border: 2px solid;
   border-radius: 50%;
+  border-radius: 4px;
   padding: 4px;
   color: #242424;
   transition: all 0.4s ease;
@@ -1613,15 +1620,51 @@ footer {
   .can-i-register-section .blurb {
     font-size: 14px;
   }
+
+  .how-i-get-paid .section-title-wrapper p,
+.escrow-payment .section-title-wrapper p {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) {
   .freelancer-job-wrapper {
     flex-wrap: nowrap;
   }
+
+  .how-i-get-paid .item-wrapper {
+    margin-bottom: 0;
+  }
+
+  .how-i-get-paid .item-wrapper::after {
+    content: "";
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    top: 44px;
+    right: -12px;
+  }
+
+  .escrow-payment .item-wrapper {
+    margin-bottom: 0;
+  }
+
+  .escrow-payment .item-wrapper::after {
+    content: "";
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    top: 44px;
+    right: -12px;
+  }
 }
 @media (min-width: 768.98px) {
   .benefits-brief-desc .benefit-img {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .form-group.form-input {
+    margin-right: 24px;
   }
 }
 @media (min-width: 1024px) {
