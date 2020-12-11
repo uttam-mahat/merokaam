@@ -392,7 +392,7 @@ ul.square li {
 }
 
 .fill-brown {
-  background: #D99077;
+  background: #f99999;
 }
 
 .fill-violet {
@@ -404,11 +404,11 @@ ul.square li {
 }
 
 .fill-sky-blue {
-  background: #2FB9CB;
+  background: #47c4d5;
 }
 
 .fill-light-red {
-  background: #EA714B;
+  background: #ee8969;
 }
 
 /* card start */
@@ -724,23 +724,23 @@ section.main-middle-contain-wrapper {
 /* main-middle-contain-wrapper section close */
 /* intro-section start */
 .intro-section {
+  position: relative;
   padding: 24px 0 80px;
+}
+
+.intro-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: url("../images/intro-bg.svg") no-repeat center;
   background-position: center;
   background-size: cover;
-  background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(90deg, #22deed, #8759d7);
-  background-image: radial-gradient(circle at 69% 75%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 38%, transparent 38%, transparent 69%, transparent 69%, transparent 100%), radial-gradient(circle at 41% 58%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 3%, transparent 3%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 94% 91%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 48%, transparent 48%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 68% 38%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 34%, transparent 34%, transparent 36%, transparent 36%, transparent 100%), radial-gradient(circle at 81% 20%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 40%, transparent 40%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 46% 37%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 37%, transparent 37%, transparent 76%, transparent 76%, transparent 100%), radial-gradient(circle at 49% 5%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 43%, transparent 43%, transparent 67%, transparent 67%, transparent 100%), radial-gradient(circle at 18% 58%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 4%, transparent 4%, transparent 20%, transparent 20%, transparent 100%), radial-gradient(circle at 43% 68%, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 10%, transparent 10%, transparent 36%, transparent 36%, transparent 100%), linear-gradient(135deg, #5585ee, #b191d6);
-  background-image: radial-gradient(circle at 53% 25%, rgba(203, 203, 203, 0.04) 0%, rgba(203, 203, 203, 0.04) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 48% 27%, rgba(22, 22, 22, 0.04) 0%, rgba(22, 22, 22, 0.04) 45%, transparent 45%, transparent 100%), radial-gradient(circle at 65% 50%, rgba(219, 219, 219, 0.04) 0%, rgba(219, 219, 219, 0.04) 61%, transparent 61%, transparent 100%), radial-gradient(circle at 78% 82%, rgba(229, 229, 229, 0.04) 0%, rgba(229, 229, 229, 0.04) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 99% 75%, rgba(96, 96, 96, 0.04) 0%, rgba(96, 96, 96, 0.04) 31%, transparent 31%, transparent 100%), radial-gradient(circle at 17% 28%, rgba(188, 188, 188, 0.04) 0%, rgba(188, 188, 188, 0.04) 15%, transparent 15%, transparent 100%), radial-gradient(circle at 19% 19%, rgba(25, 25, 25, 0.04) 0%, rgba(25, 25, 25, 0.04) 68%, transparent 68%, transparent 100%), radial-gradient(circle at 35% 23%, rgba(31, 31, 31, 0.04) 0%, rgba(31, 31, 31, 0.04) 18%, transparent 18%, transparent 100%), linear-gradient(90deg, #8ac1ee, #1415ab);
-  background-image: radial-gradient(circle at 25% 54%, rgba(18, 18, 18, 0.06) 0%, rgba(18, 18, 18, 0.06) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 67% 98%, rgba(223, 223, 223, 0.06) 0%, rgba(223, 223, 223, 0.06) 52%, transparent 52%, transparent 100%), radial-gradient(circle at 7% 92%, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 52%, transparent 52%, transparent 100%), radial-gradient(circle at 46% 37%, rgba(187, 187, 187, 0.06) 0%, rgba(187, 187, 187, 0.06) 47%, transparent 47%, transparent 100%), radial-gradient(circle at 38% 35%, rgba(57, 57, 57, 0.06) 0%, rgba(57, 57, 57, 0.06) 99%, transparent 99%, transparent 100%), radial-gradient(circle at 46% 86%, rgba(100, 100, 100, 0.06) 0%, rgba(100, 100, 100, 0.06) 60%, transparent 60%, transparent 100%), linear-gradient(90deg, #3908c8, #f091ca);
-  background-image: radial-gradient(circle at 67% 83%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, #16b0cf, #6707d7);
-  background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(90deg, #22deed, #8759d7);
-  background-image: radial-gradient(circle at 85% 1%, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 96%, transparent 96%, transparent 100%), radial-gradient(circle at 14% 15%, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 1%, transparent 1%, transparent 100%), radial-gradient(circle at 60% 90%, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 20%, transparent 20%, transparent 100%), radial-gradient(circle at 79% 7%, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 78%, transparent 78%, transparent 100%), radial-gradient(circle at 55% 65%, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 52%, transparent 52%, transparent 100%), linear-gradient(135deg, #2538de, #60bdf4);
-  /* background-image: radial-gradient(circle at 22% 15%, rgba(45, 45, 45,0.05) 0%, rgba(45, 45, 45,0.05) 50%,rgba(95, 95, 95,0.05) 50%, rgba(95, 95, 95,0.05) 100%),radial-gradient(circle at 83% 16%, rgba(122, 122, 122,0.05) 0%, rgba(122, 122, 122,0.05) 50%,rgba(194, 194, 194,0.05) 50%, rgba(194, 194, 194,0.05) 100%),radial-gradient(circle at 74% 7%, rgba(82, 82, 82,0.05) 0%, rgba(82, 82, 82,0.05) 50%,rgba(230, 230, 230,0.05) 50%, rgba(230, 230, 230,0.05) 100%),linear-gradient(90deg, rgb(243, 136, 126),rgb(251, 43, 71)); */
-  /* background-image: radial-gradient(circle at 99% 0%, rgba(235, 235, 235,0.03) 0%, rgba(235, 235, 235,0.03) 50%,rgba(142, 142, 142,0.03) 50%, rgba(142, 142, 142,0.03) 100%),radial-gradient(circle at 84% 89%, rgba(229, 229, 229,0.03) 0%, rgba(229, 229, 229,0.03) 50%,rgba(1, 1, 1,0.03) 50%, rgba(1, 1, 1,0.03) 100%),radial-gradient(circle at 89% 20%, rgba(219, 219, 219,0.03) 0%, rgba(219, 219, 219,0.03) 50%,rgba(38, 38, 38,0.03) 50%, rgba(38, 38, 38,0.03) 100%),radial-gradient(circle at 90% 0%, rgba(48, 48, 48,0.03) 0%, rgba(48, 48, 48,0.03) 50%,rgba(109, 109, 109,0.03) 50%, rgba(109, 109, 109,0.03) 100%),linear-gradient(45deg, rgb(26, 53, 180),rgb(164, 129, 216)); */
-  /* background-image: radial-gradient(circle at 88% 18%, rgba(136, 136, 136,0.05) 0%, rgba(136, 136, 136,0.05) 50%,rgba(172, 172, 172,0.05) 50%, rgba(172, 172, 172,0.05) 100%),radial-gradient(circle at 34% 9%, rgba(149, 149, 149,0.05) 0%, rgba(149, 149, 149,0.05) 50%,rgba(55, 55, 55,0.05) 50%, rgba(55, 55, 55,0.05) 100%),radial-gradient(circle at 37% 56%, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(160, 160, 160,0.05) 50%, rgba(160, 160, 160,0.05) 100%),linear-gradient(69deg, rgb(10, 68, 151),rgb(72, 211, 165)); */
-  /* background-image: radial-gradient(circle at 10% 26%, rgba(90, 90, 90,0.06) 0%, rgba(90, 90, 90,0.06) 25%,rgba(137, 137, 137,0.06) 25%, rgba(137, 137, 137,0.06) 50%,rgba(185, 185, 185,0.06) 50%, rgba(185, 185, 185,0.06) 75%,rgba(232, 232, 232,0.06) 75%, rgba(232, 232, 232,0.06) 100%),radial-gradient(circle at 46% 66%, rgba(171, 171, 171,0.06) 0%, rgba(171, 171, 171,0.06) 25%,rgba(128, 128, 128,0.06) 25%, rgba(128, 128, 128,0.06) 50%,rgba(84, 84, 84,0.06) 50%, rgba(84, 84, 84,0.06) 75%,rgba(41, 41, 41,0.06) 75%, rgba(41, 41, 41,0.06) 100%),linear-gradient(90deg, rgb(107, 35, 237),rgb(61, 203, 252)); */
-  /* background-image: radial-gradient(circle at 49% 80%, rgba(105, 105, 105,0.06) 0%, rgba(105, 105, 105,0.06) 25%,rgba(119, 119, 119,0.06) 25%, rgba(119, 119, 119,0.06) 50%,rgba(134, 134, 134,0.06) 50%, rgba(134, 134, 134,0.06) 75%,rgba(148, 148, 148,0.06) 75%, rgba(148, 148, 148,0.06) 100%),radial-gradient(circle at 58% 97%, rgba(130, 130, 130,0.06) 0%, rgba(130, 130, 130,0.06) 25%,rgba(97, 97, 97,0.06) 25%, rgba(97, 97, 97,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 75%,rgba(30, 30, 30,0.06) 75%, rgba(30, 30, 30,0.06) 100%),radial-gradient(circle at 77% 62%, rgba(106, 106, 106,0.06) 0%, rgba(106, 106, 106,0.06) 25%,rgba(71, 71, 71,0.06) 25%, rgba(71, 71, 71,0.06) 50%,rgba(37, 37, 37,0.06) 50%, rgba(37, 37, 37,0.06) 75%,rgba(2, 2, 2,0.06) 75%, rgba(2, 2, 2,0.06) 100%),radial-gradient(circle at 53% 15%, rgba(182, 182, 182,0.06) 0%, rgba(182, 182, 182,0.06) 25%,rgba(149, 149, 149,0.06) 25%, rgba(149, 149, 149,0.06) 50%,rgba(115, 115, 115,0.06) 50%, rgba(115, 115, 115,0.06) 75%,rgba(82, 82, 82,0.06) 75%, rgba(82, 82, 82,0.06) 100%),radial-gradient(circle at 65% 73%, rgba(230, 230, 230,0.06) 0%, rgba(230, 230, 230,0.06) 25%,rgba(222, 222, 222,0.06) 25%, rgba(222, 222, 222,0.06) 50%,rgba(214, 214, 214,0.06) 50%, rgba(214, 214, 214,0.06) 75%,rgba(206, 206, 206,0.06) 75%, rgba(206, 206, 206,0.06) 100%),linear-gradient(135deg, rgb(131, 27, 242),rgb(248, 30, 172)); */
-  /* background-image: radial-gradient(circle at 93% 91%, rgba(173, 173, 173,0.11) 0%, rgba(173, 173, 173,0.11) 33.333%,rgba(211, 211, 211,0.11) 33.333%, rgba(211, 211, 211,0.11) 66.666%,rgba(248, 248, 248,0.11) 66.666%, rgba(248, 248, 248,0.11) 99.999%),radial-gradient(circle at 74% 82%, rgba(240, 240, 240,0.17) 0%, rgba(240, 240, 240,0.17) 33.333%,rgba(223, 223, 223,0.17) 33.333%, rgba(223, 223, 223,0.17) 66.666%,rgba(205, 205, 205,0.17) 66.666%, rgba(205, 205, 205,0.17) 99.999%),radial-gradient(circle at 79% 0%, rgba(198, 198, 198,0.16) 0%, rgba(198, 198, 198,0.16) 33.333%,rgba(157, 157, 157,0.16) 33.333%, rgba(157, 157, 157,0.16) 66.666%,rgba(116, 116, 116,0.16) 66.666%, rgba(116, 116, 116,0.16) 99.999%),linear-gradient(0deg, rgb(38, 16, 178),rgb(103, 237, 187)); */
+  z-index: -1;
 }
 
 .logo-navbar-wrapper {
@@ -802,6 +802,7 @@ section.main-middle-contain-wrapper {
   bottom: 0;
   width: 30%;
   height: 2px;
+  height: 4px;
   background: #fff;
   background: #242424;
 }
@@ -837,6 +838,7 @@ section.main-middle-contain-wrapper {
 /* preregisternewsletter section start */
 .preregisternewsletter {
   background: #fff;
+  background: transparent;
   padding: 40px 0 80px;
   position: relative;
   z-index: 2;
@@ -849,11 +851,11 @@ section.main-middle-contain-wrapper {
 .intro-bottom-curve {
   position: absolute;
   top: 0;
-  z-index: 1;
   left: 0;
   right: 0;
   width: 100%;
   margin-top: -84px;
+  z-index: -1;
 }
 
 .intro-bottom-curve img {
@@ -889,6 +891,7 @@ section.main-middle-contain-wrapper {
 
 .preregisternewsletter .blurb {
   margin-bottom: 24px;
+  font-size: 18px;
 }
 
 form.preregisternewsletter-form {
@@ -969,7 +972,7 @@ form.preregisternewsletter-form {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 1.4px;
-  margin-bottom: 24px;
+  margin-bottom: 64px;
 }
 
 .benefits-brief-desc .benefits-sub-title strong {
@@ -1054,6 +1057,7 @@ form.preregisternewsletter-form {
 }
 
 .benefits-icon.fill-light-red {
+  background: #ee8969;
   box-shadow: 0 18px 40px -12px rgba(234, 113, 75, 0.6);
 }
 
@@ -1094,23 +1098,24 @@ form.preregisternewsletter-form {
 /* benefits section close */
 /* can i register section start */
 .can-i-register-section {
-  padding: 10% 0;
-  background: url("../images/question-bg-img.jpg") no-repeat center;
-  background-position: center;
-  background-size: cover;
+  padding: 80px 0;
   background-image: linear-gradient(210deg, #a0dedb, #03a5d1);
   background-image: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%, rgba(26, 218, 182, 0.15) 100%), linear-gradient(336deg, #3234dd, #3ceff1);
   background-image: linear-gradient(45deg, #338af9, #2ff8ff);
+  background: url("../images/question-bg-img.jpg") no-repeat;
+  background-position: center left;
+  background-size: cover;
+}
+
+.can-i-register-img {
+  text-align: center;
+  display: none;
 }
 
 .can-i-register-img img {
   max-width: 320px;
   width: 100%;
   margin: 24px auto;
-}
-
-.can-i-register-img {
-  text-align: center;
 }
 
 .can-i-register-section .section-title {
@@ -1142,10 +1147,12 @@ form.preregisternewsletter-form {
 
 .highlight-yellow .section-title {
   margin-bottom: 0;
+  font-size: 39px;
 }
 
 .highlight-yellow .blurb {
   margin-bottom: 34px;
+  font-size: 20px;
 }
 
 .highlight-yellow .section-title-wrapper {
@@ -1164,16 +1171,7 @@ form.preregisternewsletter-form {
 }
 
 .how-it-works .container::before {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  content: "";
-  width: 90%;
-  height: 390px;
-  transform: translate(-50%, -20%);
-  background: url("../images/dashed-arrow.svg") no-repeat;
-  background-size: contain;
-  background-position: center;
+  display: none;
 }
 
 .how-it-works .section-title-wrapper {
@@ -1183,15 +1181,16 @@ form.preregisternewsletter-form {
 .how-it-works .section-title {
   text-align: center;
   letter-spacing: 2px;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .how-it-works .item-wrapper {
   position: relative;
   background: #fff;
-  max-width: 280px;
+  max-width: 180px;
   width: 100%;
   height: 212px;
-  margin: 0 auto 34px;
+  margin: 0 auto 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1199,8 +1198,12 @@ form.preregisternewsletter-form {
   border-radius: 8px;
   padding: 20px;
   transition: all 0.4s ease;
-  box-shadow: 0 8px 24px -4px rgba(153, 153, 153, 0.2);
+  box-shadow: 0 8px 24px -4px rgba(153, 153, 153, 0.5);
   overflow: hidden;
+}
+
+.how-it-works .how-it-works-item-col {
+  margin-bottom: 30px;
 }
 
 .how-it-works .item-wrapper::before {
@@ -1214,11 +1217,11 @@ form.preregisternewsletter-form {
 }
 
 .how-it-works .item-wrapper.fill-light-red::before {
-  background-color: #EA714B;
+  background-color: #ee8969;
 }
 
 .how-it-works .item-wrapper.fill-sky-blue::before {
-  background: #2FB9CB;
+  background: #47c4d5;
 }
 
 .how-it-works .item-wrapper.fill-green::before {
@@ -1243,7 +1246,7 @@ form.preregisternewsletter-form {
 
 .how-it-works .item-wrapper:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.34);
 }
 
 .how-it-works .item-wrapper .item-icon {
@@ -1259,8 +1262,8 @@ form.preregisternewsletter-form {
 .how-it-works .item-wrapper .tile-front {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  /* letter-spacing: 1.4px; */
+  font-weight: 500;
+  letter-spacing: 0.6px;
   /* text-transform: uppercase; */
   color: #242424;
   line-height: 20px;
@@ -1287,6 +1290,7 @@ form.preregisternewsletter-form {
 .how-i-get-paid .section-title {
   text-align: center;
   letter-spacing: 2px;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .how-i-get-paid .how-i-get-paid-item-wrapper-row {
@@ -1299,7 +1303,9 @@ form.preregisternewsletter-form {
   margin-bottom: 24px;
 }
 
-.how-i-get-paid .item-wrapper::after {
+.how-i-get-paid .item-wrapper::after,
+.escrow-payment .item-wrapper::after,
+.how-it-works .how-it-works-item-col::after {
   content: "";
   font-family: "unicons";
   position: absolute;
@@ -1309,6 +1315,10 @@ form.preregisternewsletter-form {
   font-size: 24px;
   color: #EA714B;
   color: #242424;
+}
+
+.how-it-works .row .how-it-works-item-col:last-child::after {
+  display: none;
 }
 
 .how-i-get-paid .item-wrapper .item-icon-wrapper {
@@ -1339,7 +1349,7 @@ form.preregisternewsletter-form {
 }
 
 .how-i-get-paid .item-wrapper[data-step="1"] .item-icon-wrapper {
-  color: #2FB9CB;
+  color: #47c4d5;
 }
 
 .how-i-get-paid .item-wrapper[data-step="2"] .item-icon-wrapper {
@@ -1364,15 +1374,58 @@ form.preregisternewsletter-form {
   margin: 0 auto;
 }
 
-.how-i-get-paid .item-wrapper .tile-front {
+.how-i-get-paid .item-wrapper .tile-front,
+.escrow-payment .item-wrapper .tile-front {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
+  letter-spacing: 0.6px;
   color: #242424;
   line-height: 20px;
 }
 
 /* how-i-get-paid section close */
+.how-i-get-paid .section-title-wrapper p,
+.escrow-payment .section-title-wrapper p {
+  font-size: 18px;
+  color: #242424;
+  margin-bottom: 0;
+}
+
+.how-i-get-paid .item-wrapper .item-icon-wrapper {
+  margin-bottom: 4px;
+}
+
+.milestone {
+  margin-bottom: 14px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+.how-i-get-paid .item-wrapper .item-icon-wrapper {
+  font-size: 14px;
+  width: 104px;
+  height: 104px;
+  margin-bottom: 24px;
+}
+
+.how-i-get-paid .item-wrapper[data-step="2"] .item-icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.how-i-get-paid .item-wrapper[data-step="2"] .milestone {
+  color: #eac388;
+}
+
+.how-i-get-paid .item-wrapper[data-step="2"] .milestone {
+  margin-bottom: 8px;
+  color: #eac388;
+}
+
+.how-i-get-paid .item-wrapper[data-step="3"] .milestone {
+  color: #B8D26B;
+}
+
 /* escrow-payment section start */
 .escrow-payment {
   padding: 80px 0;
@@ -1390,7 +1443,8 @@ form.preregisternewsletter-form {
 .escrow-payment .section-title {
   text-align: center;
   letter-spacing: 2px;
-  color: #EA714B;
+  color: #ee8969;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .escrow-payment .escrow-payment-item-wrapper-row {
@@ -1403,22 +1457,10 @@ form.preregisternewsletter-form {
   margin-bottom: 24px;
 }
 
-.escrow-payment .item-wrapper::after {
-  content: "";
-  font-family: "unicons";
-  position: absolute;
-  bottom: -24px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  color: #EA714B;
-  color: #242424;
-}
-
 .escrow-payment .item-wrapper .item-icon-wrapper {
   position: relative;
-  width: 84px;
-  height: 84px;
+  width: 88px;
+  height: 88px;
   margin: 0 auto 24px;
   display: flex;
   flex-direction: row;
@@ -1441,8 +1483,8 @@ form.preregisternewsletter-form {
 }
 
 .escrow-payment .item-wrapper[data-step="1"] .item-icon-wrapper {
-  border-color: #EA714B;
-  background: #EA714B;
+  border-color: #ee8969;
+  background: #ee8969;
 }
 
 .escrow-payment .item-wrapper[data-step="2"] .item-icon-wrapper {
@@ -1451,8 +1493,8 @@ form.preregisternewsletter-form {
 }
 
 .escrow-payment .item-wrapper[data-step="3"] .item-icon-wrapper {
-  border-color: #2FB9CB;
-  background: #2FB9CB;
+  border-color: #47c4d5;
+  background: #47c4d5;
 }
 
 .escrow-payment .item-wrapper[data-step="4"] .item-icon-wrapper {
@@ -1470,16 +1512,14 @@ form.preregisternewsletter-form {
 }
 
 .escrow-payment .item-wrapper .item-icon img {
-  width: 34px;
+  width: 44px;
   margin: 0 auto;
 }
 
 .escrow-payment .item-wrapper .tile-front {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #242424;
-  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 22px;
 }
 
 /* escrow-payment section close */
@@ -1496,6 +1536,8 @@ form.preregisternewsletter-form {
 
 .various-category-section .section-title {
   text-align: center;
+  font-size: 39px;
+  color: #bccc22;
 }
 
 .row.category-card-wrapper-row .col-12 {
@@ -1505,7 +1547,7 @@ form.preregisternewsletter-form {
 .card.category-card-wrapper {
   height: 100%;
   padding: 24px;
-  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.04);
 }
 
 .card.category-card-wrapper:hover {
@@ -1514,6 +1556,7 @@ form.preregisternewsletter-form {
 
 .card.category-card-wrapper .card-body {
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .card.category-card-wrapper .card-title {
@@ -1523,7 +1566,7 @@ form.preregisternewsletter-form {
   font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  color: #2296f3;
+  color: #2a86d0;
 }
 
 .card.category-card-wrapper ul {
@@ -1542,7 +1585,7 @@ form.preregisternewsletter-form {
 }
 
 .card.category-card-wrapper ul li a:hover {
-  color: #2296f3;
+  color: #2a86d0;
 }
 
 /* various-category section close */
@@ -1553,7 +1596,7 @@ footer {
 
 .footer-bottom {
   padding: 7px 0;
-  background: #51a7dd;
+  background: #2a86d0;
 }
 
 .copyright-text,
@@ -1567,6 +1610,22 @@ footer {
 }
 
 /* footer close */
+@media (max-width: 767.98px) {
+  .intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/intro-bg-vertical.png) no-repeat center;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
 @media (max-width: 575.98px) {
   .intro-bottom-curve {
     margin-top: -28px;
@@ -1635,7 +1694,12 @@ footer {
     margin-bottom: 0;
   }
 
-  .how-i-get-paid .item-wrapper::after {
+  .how-it-works .how-it-works-item-col {
+    margin-bottom: 0;
+  }
+
+  .how-i-get-paid .item-wrapper::after,
+.escrow-payment .item-wrapper::after {
     content: "";
     bottom: unset;
     left: unset;
@@ -1644,17 +1708,18 @@ footer {
     right: -12px;
   }
 
-  .escrow-payment .item-wrapper {
-    margin-bottom: 0;
-  }
-
-  .escrow-payment .item-wrapper::after {
-    content: "";
+  .how-it-works .how-it-works-item-col::after {
+    content: "";
     bottom: unset;
     left: unset;
     transform: unset;
-    top: 44px;
+    top: 40%;
     right: -12px;
+    transform: translateY(-50%);
+  }
+
+  .escrow-payment .item-wrapper {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768.98px) {
@@ -1663,12 +1728,26 @@ footer {
   }
 }
 @media (min-width: 992px) {
+  .can-i-register-section {
+    background-position: 70% 50%;
+    background-size: cover;
+  }
+
   .form-group.form-input {
     margin-right: 24px;
   }
-}
-@media (min-width: 1024px) {
-  .freelancer-job-img-wrapper {
+
+  .how-it-works .container::before {
     display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    content: "";
+    width: 90%;
+    height: 390px;
+    transform: translate(-50%, -20%);
+    background: url("../images/dashed-arrow.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
