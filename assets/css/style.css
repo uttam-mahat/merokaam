@@ -837,8 +837,6 @@ section.main-middle-contain-wrapper {
 /* intro-section close */
 /* preregisternewsletter section start */
 .preregisternewsletter {
-  background: #fff;
-  background: transparent;
   padding: 40px 0 80px;
   position: relative;
   z-index: 2;
@@ -1098,13 +1096,24 @@ form.preregisternewsletter-form {
 /* benefits section close */
 /* can i register section start */
 .can-i-register-section {
+  position: relative;
   padding: 80px 0;
-  background-image: linear-gradient(210deg, #a0dedb, #03a5d1);
-  background-image: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%, rgba(26, 218, 182, 0.15) 100%), linear-gradient(336deg, #3234dd, #3ceff1);
-  background-image: linear-gradient(45deg, #338af9, #2ff8ff);
+}
+
+.can-i-register-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: url("../images/question-bg-img.jpg") no-repeat;
   background-position: center left;
   background-size: cover;
+  z-index: -1;
+  transform: scale(1.2) translateX(20px);
 }
 
 .can-i-register-img {
@@ -1147,7 +1156,7 @@ form.preregisternewsletter-form {
 
 .highlight-yellow .section-title {
   margin-bottom: 0;
-  font-size: 39px;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .highlight-yellow .blurb {
@@ -1536,7 +1545,7 @@ form.preregisternewsletter-form {
 
 .various-category-section .section-title {
   text-align: center;
-  font-size: 39px;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
   color: #bccc22;
 }
 
@@ -1728,9 +1737,20 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .can-i-register-section {
+  .can-i-register-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/question-bg-img.jpg") no-repeat;
     background-position: 70% 50%;
     background-size: cover;
+    z-index: -1;
+    transform: scale(1) translateX(0);
   }
 
   .form-group.form-input {
