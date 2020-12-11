@@ -1098,6 +1098,7 @@ form.preregisternewsletter-form {
 .can-i-register-section {
   position: relative;
   padding: 80px 0;
+  overflow: hidden;
 }
 
 .can-i-register-section::before {
