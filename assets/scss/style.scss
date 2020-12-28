@@ -780,6 +780,7 @@ section.main-middle-contain-wrapper {
 .intro-section {
   position: relative;
   padding: 24px 0 80px;
+  overflow: hidden;
   // background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(90deg, rgb(34, 222, 237), rgb(135, 89, 215));
   // background-image: radial-gradient(circle at 69% 75%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 38%, transparent 38%, transparent 69%, transparent 69%, transparent 100%), radial-gradient(circle at 41% 58%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 3%, transparent 3%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 94% 91%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 48%, transparent 48%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 68% 38%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 34%, transparent 34%, transparent 36%, transparent 36%, transparent 100%), radial-gradient(circle at 81% 20%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 40%, transparent 40%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 46% 37%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 37%, transparent 37%, transparent 76%, transparent 76%, transparent 100%), radial-gradient(circle at 49% 5%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 43%, transparent 43%, transparent 67%, transparent 67%, transparent 100%), radial-gradient(circle at 18% 58%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 4%, transparent 4%, transparent 20%, transparent 20%, transparent 100%), radial-gradient(circle at 43% 68%, hsla(65, 0%, 95%, 0.05) 0%, hsla(65, 0%, 95%, 0.05) 10%, transparent 10%, transparent 36%, transparent 36%, transparent 100%), linear-gradient(135deg, rgb(85, 133, 238), rgb(177, 145, 214));
   // background-image: radial-gradient(circle at 53% 25%, rgba(203, 203, 203, 0.04) 0%, rgba(203, 203, 203, 0.04) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 48% 27%, rgba(22, 22, 22, 0.04) 0%, rgba(22, 22, 22, 0.04) 45%, transparent 45%, transparent 100%), radial-gradient(circle at 65% 50%, rgba(219, 219, 219, 0.04) 0%, rgba(219, 219, 219, 0.04) 61%, transparent 61%, transparent 100%), radial-gradient(circle at 78% 82%, rgba(229, 229, 229, 0.04) 0%, rgba(229, 229, 229, 0.04) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 99% 75%, rgba(96, 96, 96, 0.04) 0%, rgba(96, 96, 96, 0.04) 31%, transparent 31%, transparent 100%), radial-gradient(circle at 17% 28%, rgba(188, 188, 188, 0.04) 0%, rgba(188, 188, 188, 0.04) 15%, transparent 15%, transparent 100%), radial-gradient(circle at 19% 19%, rgba(25, 25, 25, 0.04) 0%, rgba(25, 25, 25, 0.04) 68%, transparent 68%, transparent 100%), radial-gradient(circle at 35% 23%, rgba(31, 31, 31, 0.04) 0%, rgba(31, 31, 31, 0.04) 18%, transparent 18%, transparent 100%), linear-gradient(90deg, rgb(138, 193, 238), rgb(20, 21, 171));
@@ -814,6 +815,55 @@ section.main-middle-contain-wrapper {
   z-index: -1;
 }
 
+.intro-section.job-provider-intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/intro-bg-job-provider.svg") no-repeat center;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.intro-col-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  // max-width: 420px;
+  // width: 100%;
+}
+
+.intro-top-content-wrapper {
+  flex: 1;
+}
+
+.logo-title-countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo-title-countdown .launch-countdown-wrapper {
+  width: 40%;
+}
+
+.freelancer-job-wrapper .freelancer-job-item:last-child {
+  width: 40%;
+  max-width: unset;
+}
+
 .logo-navbar-wrapper {
   margin-bottom: 34px;
 }
@@ -846,6 +896,10 @@ section.main-middle-contain-wrapper {
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
+}
+
+.intro-section.job-provider-intro .freelancer-job-item.job-provider-item {
+  max-width: 400px;
 }
 
 .item-title-blurb-wrapper {
@@ -1671,6 +1725,10 @@ form.preregisternewsletter-form {
   line-height: 22px;
 }
 
+.escrow-payment .item-wrapper .tile-front .tile-title {
+  display: block;
+}
+
 /* escrow-payment section close */
 
 /* various-category section start */
@@ -1768,8 +1826,242 @@ footer {
 
 /* footer close */
 
+/* launch date countdown start */
+.launch-countdown-wrapper .section-title-wrapper {
+  margin-bottom: 14px;
+}
 
-@media (max-width: 991px) {}
+.launch-countdown-wrapper .section-title {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0.4px;
+  color: $white-color;
+  margin-bottom: 0;
+}
+
+.launch-countdown-wrapper {
+  margin-bottom: 34px;
+}
+
+.launch-countdown-wrapper.hide-mobile {
+  display: none;
+}
+
+.launch-countdown-wrapper.display-mobile {
+  display: block;
+}
+
+#countdown ul {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#countdown ul li {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 0;
+  margin-right: 8px;
+  overflow: hidden;
+  text-align: center;
+  color: $text-dark;
+  width: 90px;
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+
+#countdown ul li span.count-top {
+  background: $white-color;
+  padding: 8px;
+  font-weight: 500;
+}
+
+#countdown ul li .count-bottom {
+  padding: 8px;
+  font-size: 14px;
+  color: #707070;
+}
+
+#countdown ul li:last-child {
+  margin-right: 0;
+}
+
+#countdown ul li span {
+  display: block;
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#content {
+  display: none;
+  padding: 10px;
+}
+
+@media all and (max-width: 768px) {
+
+  #countdown ul li {
+    font-size: 12px;
+  }
+
+  .logo-title-countdown .launch-countdown-wrapper {
+    display: none;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item:last-child {
+    width: 100%;
+    max-width: unset;
+  }
+
+}
+
+/* launch date countdown close */
+
+// job-provider page
+.preregisternewsletter-sub-header {
+  color: #ff7147;
+}
+
+.intro-section.job-provider-intro .freelancer-job-item .job-provider-btn .btn.white-btn.fill-white:hover {
+  background: #ff6c3e;
+  border-color: #ff6c3e;
+}
+
+.intro-section.job-provider-intro .freelancer-job-item .freelancer-company-btn .btn.white-btn.fill-white:hover {
+  background: #36a1f4;
+  border-color: #36a1f4;
+}
+
+/* job-provider-benefits section start */
+.benefits-section .section-title {
+  letter-spacing: 1.4px;
+  // font-size: calc(28px + (34 - 28) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* job-provider-benefits section close */
+
+/* money-can-i-save - section start */
+.highlight-yellow.money-can-i-save .card {
+  height: 100%;
+  padding: 24px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.04);
+}
+
+.highlight-yellow.money-can-i-save .card:hover {
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-yellow.money-can-i-save .card .blurb.money-can-i-save-list {
+  position: relative;
+  font-size: 16px;
+  padding-left: 24px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.highlight-yellow.money-can-i-save .card .blurb.money-can-i-save-list::after {
+  content: attr(data-list-step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Oswald",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  color: $text-dark;
+}
+
+.highlight-yellow.money-can-i-save strong {
+  color: #007bff;
+}
+
+/* money-can-i-save - section close */
+
+/* escrow-payment page start */
+.escrow-payment.job-provider .item-wrapper .tile-front .tile-title {
+  font-family: "SF Text",
+    "Poppins",
+    sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  color: $text-dark;
+  line-height: 20px;
+}
+
+/* escrow-payment page close */
+
+@media (max-width: 991px) {
+  // .intro-section::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(../images/intro-bg-vertical.svg) no-repeat center;
+  //   background-position: center;
+  //   background-size: cover;
+  //   z-index: -1;
+  // }
+
+  // .intro-section.job-provider-intro::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(../images/intro-bg-job-provider-vertical.svg) no-repeat center;
+  //   background-position: center;
+  //   background-size: cover;
+  //   z-index: -1;
+  // }
+
+  .intro-main-wrapper {
+    width: 100%;
+  }
+
+  .intro-section.job-provider-intro.order-1 {
+    order: 2;
+  }
+
+  .intro-section.job-provider-intro.order-2 {
+    order: 1;
+  }
+
+  .intro-col-wrapper .intro-main-wrapper:first-child .freelancer-job-item {
+    margin-bottom: 34px;
+  }
+
+  .intro-title {
+    line-height: 28px;
+    margin-bottom: 34px;
+  }
+
+  .logo-title-countdown .logo-intro-title {
+    margin-right: 24px;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item:first-child {
+    margin-right: 24px;
+  }
+
+  .logo-title-countdown .launch-countdown-wrapper {
+    width: 50%;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item:last-child {
+    width: 50%;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item {
+    width: 50%;
+  }
+}
 
 @media (max-width: 767.98px) {
 
@@ -1786,10 +2078,44 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/intro-bg-vertical.png) no-repeat center;
+    background: url(../images/intro-bg-vertical.svg) no-repeat center;
     background-position: center;
     background-size: cover;
     z-index: -1;
+  }
+
+  .intro-section.job-provider-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/intro-bg-job-provider-vertical.svg) no-repeat center;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item {
+    width: 100%;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item,
+  .freelancer-job-wrapper .freelancer-job-item:last-child {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .freelancer-job-wrapper .freelancer-job-item:first-child,
+  .freelancer-job-wrapper .freelancer-job-item {
+    margin-bottom: 34px;
+  }
+
+  .freelancer-job-wrapper {
+    margin-top: 34px;
   }
 }
 
@@ -1804,21 +2130,50 @@ footer {
 @media only screen and (max-width: 480px) and (min-width: 375px) {}
 
 @media (max-width: 480px) {
-  .freelancer-job-item {
-    margin-bottom: 34px;
+
+  #countdown ul li .count-bottom {
+    font-size: 12px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  #countdown ul li {
+    // width: auto;
+    margin-bottom: 8px;
+    // flex: 0 0 47%;
+    // max-width: 47%;
+  }
+
+  #countdown ul {
+    flex-wrap: wrap;
+  }
+
+  .freelancer-job-item .blurb {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  #countdown ul li {
+    flex: 0 0 47%;
+    max-width: 47%;
   }
 }
 
 @media (max-width: 375px) {
+  .intro-section::before {
+    transform: scale(1.2) translateY(-44px);
+
+  }
+
+  .intro-section.job-provider-intro::before {}
+
   .intro-title {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 1.8px;
     margin-top: 34px;
-  }
-
-  .freelancer-job-wrapper {
-    margin-top: 64px;
+    margin-bottom: 0;
   }
 
   .intro-section {
@@ -1865,6 +2220,14 @@ footer {
 
 @media (min-width: 768px) {
 
+  .launch-countdown-wrapper.hide-mobile {
+    display: block;
+  }
+
+  .launch-countdown-wrapper.display-mobile {
+    display: none;
+  }
+
   .freelancer-job-wrapper {
     flex-wrap: nowrap;
   }
@@ -1877,7 +2240,16 @@ footer {
     margin-bottom: 0;
   }
 
-  .how-i-get-paid .item-wrapper::after,
+  .how-i-get-paid .item-wrapper::after {
+    content: '\e846';
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    top: 46%;
+    right: -12px;
+    transform: translateY(-50%);
+  }
+
   .escrow-payment .item-wrapper::after {
     content: '\e846';
     bottom: unset;
@@ -1892,7 +2264,8 @@ footer {
     bottom: unset;
     left: unset;
     transform: unset;
-    top: 40%;
+    top: 50%;
+    top: 46%;
     right: -12px;
     transform: translateY(-50%);
   }

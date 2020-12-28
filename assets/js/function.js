@@ -1,4 +1,34 @@
 $(document).ready(function (e) {
+
+  /* launch date countdown start */
+  (function () {
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    let launchDate = "Jan 30, 2024 00:00:00",
+      countDown = new Date(launchDate).getTime(),
+      x = setInterval(function () {
+
+        let now = new Date().getTime(),
+          distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+        
+        document.getElementById("day").innerText = Math.floor(distance / (day)),
+        document.getElementById("hrs").innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById("min").innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById("sec").innerText = Math.floor((distance % (minute)) / second);
+
+        //seconds
+      }, 0)
+  }());
+  /* launch date countdown close */
+
   // Add the following code if you want the name of the file appear on select
   $(".custom-file-input").on("change", function () {
     var fileName = $(this).val().split("\\").pop();
@@ -85,81 +115,6 @@ $(document).ready(function (e) {
     }
   });
   /* Highlight current page close */
-
-  /* multiNewsSliderCarousel start */
-  // $("#multiNewsSliderCarousel").on("slide.bs.carousel", function (e) {
-  //   var $e = $(e.relatedTarget);
-  //   var idx = $e.index();
-  //   var itemsPerSlide = 3;
-  //   var totalItems = $("#multiNewsSliderCarousel .carousel-item").length;
-
-  //   if (idx >= totalItems - (itemsPerSlide - 1)) {
-  //     var it = itemsPerSlide - (totalItems - idx);
-  //     for (var i = 0; i < it; i++) {
-  //       // append slides to end
-  //       if (e.direction == "left") {
-  //         $("#multiNewsSliderCarousel .carousel-item")
-  //           .eq(i)
-  //           .appendTo(".carousel-inner");
-  //       } else {
-  //         $("#multiNewsSliderCarousel .carousel-item")
-  //           .eq(0)
-  //           .appendTo(".carousel-inner");
-  //       }
-  //     }
-  //   }
-  // });
-  /* multiNewsSliderCarousel close */
-
-  /* executive team slider start */
-  // (function () {
-  //   jQuery('#theCarousel').carousel();
-
-  // }());
-
-  // (function () {
-  //   jQuery('.carousel-showmanymoveone .item').each(function () {
-  //     var itemToClone = jQuery(this);
-
-  //     for (var i = 1; i < 3; i++) {
-  //       itemToClone = itemToClone.next();
-
-  //       // wrap around if at end of item collection
-  //       if (!itemToClone.length) {
-  //         itemToClone = jQuery(this).siblings(':first');
-  //       }
-
-  //       // grab item, clone, add marker class, add to collection
-  //       itemToClone.children(':first-child').clone()
-  //         .addClass("cloneditem-" + (i))
-  //         .appendTo(jQuery(this));
-  //     }
-  //   });
-  // }());
-
-  // (function () {
-  //   jQuery('.carousel-showmanymoveone').carousel({
-  //     interval: false
-  //   });
-  // }());
-  /* executive team slider close */
-
-  /* gallery filter button start */
-  $(".filter-button").click(function () {
-    var value = $(this).attr('data-filter');
-
-    if (value == "all") {
-      $('.filter').show('1000');
-    } else {
-      $(".filter").not('.' + value).hide('3000');
-      $('.filter').filter('.' + value).show('3000');
-    }
-
-    $(".filter-button").removeClass("active");
-    $(this).addClass("active");
-
-  });
-  /* gallery filter button close */
 
   var offset = 100;
   var duration = 550;
